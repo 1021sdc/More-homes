@@ -12,16 +12,16 @@ git clone https://github.com/1021sdc/More-homes.git
 ```
 
 Step 2: Create `config.js` file in `db` folder with your configuration
-	Example template: 
-		```javascript
-			const config = {
-				host     : '127.0.0.1',
-  				user     : 'root',
-  				database : 'more_homes',
-			};
+ * Example template: 
+```javascript
+  const config = {
+    host     : '127.0.0.1',
+      user     : 'root',
+      database : 'more_homes',
+  };
 
-			module.exports = config;
-		```
+  module.exports = config;
+```
 
 Step 3: Seed data 
 ```javascript
