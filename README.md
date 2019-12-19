@@ -48,6 +48,26 @@ Extra: To update screenshots for tests
 $ npm run updateTestSnapshot
 ```
 
+## CRUD Routes
+
+All routes are serviced through the /MoreHomes endpoint.  Given tasks are dependent on the HTTP verb used:
+
+```javascript
+  app.route('/MoreHomes')
+    .get((req, res) => {
+      res.send('Get a random home');
+    })
+    .post((req, res) => {
+      res.send('Add a home to db');
+    })
+    .put((req, res) => {
+      res.send('Edit a stored home');
+    })
+    .delete((req, res) => {
+      res.send('Remove a stored home');
+    });
+```
+
 ## Related Projects
 
 * https://github.com/hacker-home/Airbnb-photos
