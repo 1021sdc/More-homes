@@ -20,6 +20,21 @@ const createApp = (dbConnection) => {
     });
   });
 
+  // most basic handing of crud
+  app.route('/MoreHomes')
+    .get((req, res) => {
+      res.send('Get a random home');
+    })
+    .post((req, res) => {
+      res.send('Add a home to db');
+    })
+    .put((req, res) => {
+      res.send('Edit a stored home');
+    })
+    .delete((req, res) => {
+      res.send('Remove a stored home');
+    });
+
   return app;
 };
 

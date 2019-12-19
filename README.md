@@ -8,17 +8,27 @@ Suggestion module for the vacation rental app that displays 12 more homes. Each 
 
 Step 1: Clone the repo
 ```javascript
-git clone https://github.com/hacker-home/More-homes.git
+git clone https://github.com/1021sdc/More-homes.git
 ```
 
 Step 2: Create `config.js` file in `db` folder with your configuration
+	Example template: 
+		```javascript
+			const config = {
+				host     : '127.0.0.1',
+  				user     : 'root',
+  				database : 'more_homes',
+			};
+
+			module.exports = config;
+		```
 
 Step 3: Seed data 
 ```javascript
-node server/createData.js
+$ npm run db-seed
 ```
 
-Step 4: Compile files with webpack
+Step 4: Compile files with webpack (and watch)
 ```javascript
 $ npm run react-dev
 ```
