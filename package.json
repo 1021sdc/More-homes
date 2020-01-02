@@ -13,7 +13,6 @@
   "author": "itsOrD",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.592.0",
     "axios": "^0.18.0",
     "body-parser": "^1.19.0",
     "cassandra-driver": "^4.3.1",
@@ -30,6 +29,7 @@
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
+    "aws-sdk": "^2.596.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.1",
     "babel-loader": "^8.0.5",
@@ -55,6 +55,7 @@
     "jest-express": "^1.10.1",
     "prettier": "1.16.4",
     "react-test-renderer": "16.8.6",
+    "request": "^2.88.0",
     "sinon": "^7.3.1",
     "style-loader": "^0.23.1",
     "supertest": "^4.0.2",

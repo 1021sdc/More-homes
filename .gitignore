@@ -43,3 +43,5 @@ package-lock.json
 
 public/dist/images
 pbulic/dist/bundle.js
+
+db/seed/s3/secret/keys.js
