@@ -1,3 +1,5 @@
+const faker = require('faker');
+
 const getAll = (connection, callback) => {
   const query = 'SELECT * FROM homes ORDER BY RAND() LIMIT 12';
   connection.query(query, (err, result) => {
@@ -5,6 +7,19 @@ const getAll = (connection, callback) => {
       callback(err);
     } else {
       callback(null, result);
+    }
+  });
+};
+
+const pgLoadQuery = (connection, callback) => {
+  const randomMin = faker.random.number({ in: 1, max: 9999985 });
+  const randomMax = randomMin + 15;
+  const query = `SELECT * FROM homes WHERE id >= ${randomMin} AND id <= ${randomMax}`;
+  connection.query(query, (err, results) => {
+    if (err) {
+      callback(err);
+    } else {
+      callback(null, results);
     }
   });
 };
@@ -22,5 +37,6 @@ const addHouse = (connection, arr, callback) => {
 
 module.exports = {
   getAll,
+  pgLoadQuery,
   addHouse,
 };
