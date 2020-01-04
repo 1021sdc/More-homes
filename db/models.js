@@ -12,8 +12,8 @@ const getAll = (connection, callback) => {
 };
 
 const pgLoadQuery = (connection, callback) => {
-  const randomMin = faker.random.number({ in: 1, max: 9999985 });
-  const randomMax = randomMin + 15;
+  const randomMin = faker.random.number({ in: 1, max: 9999988 });
+  const randomMax = randomMin + 12;
   const query = `SELECT * FROM homes WHERE id > ${randomMin} AND id <= ${randomMax}`;
   connection.query(query, (err, results) => {
     if (err) {
