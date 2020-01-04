@@ -26,7 +26,7 @@ const seed = (writer, encoding, cb) => {
       listingID += 1;
       let dbData = genListing();
       dbData.listingID = listingID; // remember to remove from script when recreating db info on EC2, decreases load in time to postgres, also remember to add in listingid col after adding into table
-      let data = `${dbData.listingID},'${dbData.image}','${dbData.house_type}','${dbData.location}','${dbData.description}',${dbData.cost_per_night},${dbData.rating},${dbData.votes}\n`;
+      let data = `${dbData.listingID},${dbData.image},${dbData.house_type},${dbData.location},${dbData.description},${dbData.cost_per_night},${dbData.rating},${dbData.votes}\n`;
       if (i === 0) {
         writer.write(data, encoding, cb);
       } else {

@@ -44,12 +44,12 @@ export default class ListOfHomes extends React.Component {
     const rightVisible = endIndex < this.props.data.length ? 'visible' : 'hidden';
     return (
       <div className="flex-container">
-        {console.log(this.props.data)}
-        {console.log(this.props.data.slice(this.state.beginIndex, endIndex))}
+        {console.log(this.props.data[0])}
+        {console.log('nested...', this.props.data.rows)}
         <button className="leftScroll" onClick={this.handleLeftClick} style={{ visibility: leftVisible }}>&lt;</button>
         {this.props.data.slice(this.state.beginIndex, endIndex).map((entry) => <ListEntry entry={entry} key={entry.id} />)}
         <button className="rightScroll" onClick={this.handleRightClick} style={{ visibility: rightVisible }}>&gt;</button>
       </div>
     )
   }
-}
+};

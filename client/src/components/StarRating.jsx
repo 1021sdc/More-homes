@@ -17,4 +17,4 @@ export default class StarRating extends React.Component {
       </div>
     );
   }
-}
+};

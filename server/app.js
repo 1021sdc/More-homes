@@ -16,7 +16,8 @@ const createApp = (dbConnection) => {
       if (err) {
         res.status(500).send();
       } else {
-        res.status(200).send(data);
+        console.log(data.rows[0]);
+        res.status(200).send(data.rows);
       }
     });
   });
