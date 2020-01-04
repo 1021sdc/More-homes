@@ -1,3 +1,4 @@
+require('newrelic');
 const appCreator = require('./app.js');
 const mysqlConnection = require('../db/conn.js');
 

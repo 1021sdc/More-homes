@@ -22,16 +22,13 @@ class MoreHomes extends React.Component {
     });
   }
 
-    // ?id=${params.get('id')}`)
-    // window.addEventListener("resize", this.handleResize);
-    // const search = window.location.search;
-    // const params = new URLSearchParams(search);
-
   componentDidMount(e) {
-    axios.get(`/MoreHomes`)
+    window.addEventListener("resize", this.handleResize);
+    const search = window.location.search;
+    const params = new URLSearchParams(search);
+    axios.get(`/MoreHomes/?id=${params.get('id')}`)
       .then((response) => {
         this.setState({ data: response.data })
-        console.log('response: ', response)
       })
       .catch((error) => {
         console.log('GET error: ', error)
@@ -55,6 +52,6 @@ class MoreHomes extends React.Component {
       </div>
     )
   }
-}
+};
 
 export default MoreHomes;

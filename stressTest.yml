@@ -1,0 +1,15 @@
+config:
+  target: "http://localhost:3005/?id="
+  phases:
+    - duration: 10
+      arrivalRate: 1000
+      name: "RPS goal"
+  processor: "./fakeHomeID.js"
+
+scenarios:
+  - name: "Emulate page load"
+    flow:
+      # call fakeHomeID() to supply an id for the URL
+      - function: "fakeHomeID"
+      - get:
+          url: "/?id={{ id }}"
