@@ -19,3 +19,5 @@ ADD dockerDbConfig.js ./db/config.js
 ADD start.sh .
 
 ENTRYPOINT ["bash", "start.sh"]
+
+# 10.17.0-alpine

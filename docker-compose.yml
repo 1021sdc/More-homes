@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  mc:
+    build: .
+    depends_on:
+      - 'db'
+    ports:
+      - '3004:3004'
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_USER: zob
+      MYSQL_ROOT_PASSWORD: seniortable
