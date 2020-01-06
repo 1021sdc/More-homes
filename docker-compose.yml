@@ -7,10 +7,10 @@ services:
     depends_on:
       - 'db'
     ports:
-      - '3004:3004'
+      - '3005:3005'
 
   db:
-    image: mysql:5.7
+    image: postgres
     environment:
-      MYSQL_USER: zob
-      MYSQL_ROOT_PASSWORD: seniortable
+      POSTGRES_USER: root
+      POSTGRESS_PASSWORD: seniortable
