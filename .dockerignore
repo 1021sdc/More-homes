@@ -1,5 +1,6 @@
 .circleci
 client
+db/seed/s2/secret/keys.js
 node_modules
 public/dist/bundle.js
 spec

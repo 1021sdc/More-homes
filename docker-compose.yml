@@ -12,5 +12,5 @@ services:
   db:
     image: postgres
     environment:
-      POSTGRES_USER: root
+      POSTGRES_USER: fairtest
       POSTGRESS_PASSWORD: seniortable
