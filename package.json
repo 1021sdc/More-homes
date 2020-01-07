@@ -2,9 +2,10 @@
   "name": "More-homes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
+    "docker": "node server/app.js",
     "db-seed": "node server/createData.js"
   },
   "author": "itsOrD",
@@ -14,14 +15,11 @@
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "express": "^4.16.4",
+    "faker": "^4.1.0",
     "newrelic": "^6.2.0",
     "pg": "^7.17.0"
   },
   "devDependencies": {
-    "aws-sdk": "^2.596.0",
-    "faker": "^4.1.0",
-    "fs": "0.0.1-security",
-    "request": "^2.88.0",
-    "nodemon": "^1.19.0"
+    "request": "^2.88.0"
   }
 }
