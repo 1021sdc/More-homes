@@ -19,3 +19,4 @@ start.sh
 STYLE-GUIDE.md
 webpack.config.js
 .vscode
+.env
