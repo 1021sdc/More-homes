@@ -4,9 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node server/server.js",
-    "docker": "node server/app.js",
-    "db-seed": "node server/createData.js"
+
   },
   "author": "itsOrD",
   "license": "ISC",
