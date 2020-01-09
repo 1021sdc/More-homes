@@ -11,11 +11,15 @@ babel.config.js
 docker-compose
 Dockerfile
 oldDockerfile
+fakeHomeID.js
 jest.config.js
+newrelic_agent.log
+newrelic.js
 package-lock.json
 README.md
 schema.sql
 start.sh
+stresstest.yml
 STYLE-GUIDE.md
 webpack.config.js
 .vscode
